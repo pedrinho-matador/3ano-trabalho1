@@ -11,3 +11,8 @@
     --botao-inativo:#71AA91;
     --botao-ativo:#FFF084;
 }
+body{
+    background-color: var(--preto);
+    color: var(--verde);
+    font-family: 'Chakra Pech', 'Fredoka';
+}
