@@ -1,27 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 :root{
-    --branco:rgba(255, 255, 255, 1);
-    --cor-de-fundo:rgba(71, 92, 145, 0.49);
-    --cor-laranja:#FFB654;
-    --verde:#75FF64;
-    --verde-claro:#02FFD9;
-    --verde-limao:#7DFFAB;
-    --botao-inativo:#FF6C54;
-    --botao-inativo:#71AA91;
-    --botao-ativo:#FFF084;
+    --branco: #FFFFFF;
+    --rosa: #F17AFA;
+    --verde: #C6FA9D;
+    --cinza: #69777D;
+    --azul: #7DD2FA;
+    --laranja: #FAC07A;
+    --marrom: #A68DA8;
+    --azul2: #0047FF;
+    --botao-inativo: rgba(125, 210, 250, 0.5);
+    --botao-inativo: rgba(241, 122, 250, 0.5);
+    --botao-inativo: rgba(250, 192, 122, 0.5);
+    --botao-inativo: rgba(198, 250, 157, 0.5);
+    --botao-ativo:rgba(241, 122, 250, 1);
+    --botao-ativo:rgba(125, 210, 250, 1);
+    --botao-ativo:rgba(250, 192, 122, 1);
+    --botao-ativo:rgba(198, 250, 157, 1);
+    
 }
 body{
-    background-color: var(--preto);
-    color: var(--verde);
-    font-family: 'Chakra Pech', 'Fredoka';
+    background-color: var(--branco);
+    color: var(--marrom);
+    font-family: 'Chakra Petch', 'Protest Revolution';
 }
 .conteudo-principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
 }
@@ -31,12 +38,13 @@ body{
     font-size: 32px;
 }
 .titulo-principal span{
-    color: var(--verde-limao);
+    color: var(--verde);
 }
+
 .botao{
-    font-family: "Chakra Peath", sans-serif;
+    font-family: 'Chakra Petch', 'Protest Revolution';
     background-color: var(--botao-inativo);
-    color: var(--branco);
+    color: var(--marrom);
     display: flex;
     justify-content: center;
     padding: 1em;
@@ -44,22 +52,28 @@ body{
     align-items: center;
     width: 100%;
     border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo) ;
+    border-right: 2px solid var(--botao-ativo) ;
     border-top: none;
 }
 .botao:first-child{
-    border-radius: 40px 40px 0 0;
+    border-radius: 40px 0 0;
+
+}
+
+.botao:last-child{
+    border-radius: 0px 40px 0 0;
 }
 .botoes{
     display: block;
 }
+
 .ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
 .abas-textos{
-    background-color: var(--cor-de-fundo);
+    background-color: var(--branco);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
@@ -75,19 +89,14 @@ body{
 }
 .aba-conteudo-titulo-secundario{
     text-align: center;
-    color: var(--branco);
+    color: var(--rosa);
     text-transform: uppercase;
 }
-@media screen and (min-width: 768px) {
-.botoes{
-    display: flex;
-}
-.botao:first-child{
-    border-radius: 40px 0 0 0;
-}
-.botao:last-child{
-    border-radius: 0 40px 0 0;
-}
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+    }
 }
 
 
