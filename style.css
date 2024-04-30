@@ -70,7 +70,7 @@ body{
 
 .ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--cinza);
+    border-bottom: 4px solid var(--verde);
 }
 .abas-textos{
     background-color: var(--branco);
