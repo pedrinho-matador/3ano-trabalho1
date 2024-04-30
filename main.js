@@ -10,6 +10,7 @@ for (let i = 0; i < botoes.length; i++){
   botoes[i].classList.add("ativo");
   textos[i].classList.add("ativo");
  } 
+ 
 }
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-12-01T00:00:00");
@@ -30,3 +31,4 @@ function calculaTempo(tempoObjetivo1){
     + minutos + "minutos" 
     + segundos + "segundos";
 }
+
