@@ -1,34 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
 :root{
     --branco: #FFFFFF;
-    --rosa: #F17AFA;
-    --verde: #C6FA9D;
-    --cinza: #69777D;
-    --azul: #7DD2FA;
-    --laranja: #FAC07A;
-    --marrom: #A68DA8;
-    --azul2: #0047FF;
-    --botao-inativo: rgba(125, 210, 250, 0.5);
-    --botao-inativo: rgba(241, 122, 250, 0.5);
-    --botao-inativo: rgba(250, 192, 122, 0.5);
-    --botao-inativo: rgba(198, 250, 157, 0.5);
-    --botao-ativo:rgba(241, 122, 250, 1);
-    --botao-ativo:rgba(125, 210, 250, 1);
-    --botao-ativo:rgba(250, 192, 122, 1);
-    --botao-ativo:rgba(198, 250, 157, 1);
-    
+    --cor-de-fundo: #6FC9C0;
+    --cor-rosa:#C568CC;
+    --verde: #084A56;
+    --verde-claro: #6FC9C0;
+    --verde-limao: #6FFF57;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --botao-inativo: rgba(8, 74, 86, 0.5);
+    --botao-ativo: rgba(17, 209, 243, 0.795);
 }
 body{
-    background-color: var(--azul);
-    color: var(--marrom);
-    font-family: 'Chakra Petch', 'Protest Revolution';
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', 'Sans-Serif';
 }
 .conteudo-principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1600px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
@@ -38,13 +31,13 @@ body{
     font-size: 32px;
 }
 .titulo-principal span{
-    color: var(--verde);
+    color: var(--verde-limao);
 }
 
 .botao{
-    font-family: 'Chakra Petch', 'Protest Revolution';
+    font-family: 'Chakra Petch', Sans-Serif;
     background-color: var(--botao-inativo);
-    color: var(--marrom);
+    color: var(--branco);
     display: flex;
     justify-content: center;
     padding: 1em;
@@ -52,28 +45,22 @@ body{
     align-items: center;
     width: 100%;
     border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo) ;
-    border-right: 2px solid var(--botao-ativo) ;
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
     border-top: none;
 }
 .botao:first-child{
-    border-radius: 40px 0 0;
-
-}
-
-.botao:last-child{
-    border-radius: 0px 40px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 .botoes{
     display: block;
 }
-
 .ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--cinza);
+    border-bottom: 4px solid var(--verde);
 }
 .abas-textos{
-    background-color: var(--branco);
+    background-color: var(--cor-de-fundo);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
@@ -92,11 +79,20 @@ body{
     color: var(--rosa);
     text-transform: uppercase;
 }
-
+.contador{
+    text-align: center;
+    font-size: 20px;
+}
 @media screen and (min-width: 768px){
     .botoes{
         display: flex;
     }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }  
 }
 
 
